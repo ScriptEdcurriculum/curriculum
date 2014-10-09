@@ -69,10 +69,6 @@ Teacher should now circulate and assist any student who does not understand how 
 Before starting this section ask students to close their laptops and take notes. The teacher will give a 3-4 minute lecture on tags, tag stucture and FILO (First In Last Out). The teacher may use the Google Presentation provide in the references.
 
 
-## Guided Practice #2(“We Do”)
-
-“Okay everyone open your computers and follow along with me.” Once again on the board open another website. This time a very plain page with little to no CSS (recommendation: use the first site made at Cern.. see references.) All together, find a specific piece of text and manipulate it. 
-
 ## Independent practice #2("You do")
 
 Ask students to create the webpage firstpage.html (Seen below) using a text editor. **Student may need to be shown how to open this file in the browser.**
