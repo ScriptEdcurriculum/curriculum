@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ScriptEd ~ CSS Mastery lesson</title>
+    <style type="text/css">
+      /*reset*/
+        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, 
+        abbr, acronym, address, big, cite, code, del, dfn, em, img, 
+        ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, 
+        ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, 
+        article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary, time, mark, audio, video 
+        {
+          margin: 0;
+          padding: 0;
+          border: 0;
+          font: inherit;
+          font-size: 100%;
+          vertical-align: baseline
+        }
+        html {
+          line-height: 1;
+        }
+        ol, ul {
+          list-style: none;
+        }
+        table {
+          border-collapse: collapse;
+          border-spacing: 0;
+        }
+        caption, th, td {
+          text-align: left;
+          font-weight: normal;
+          vertical-align: middle;
+        }
+        q, blockquote {
+          quotes: none;
+        }
+        q:before, q:after, blockquote:before, blockquote:after {
+          content: "";
+          content: none;
+        }
+        a img {
+          border: none;
+        }
+        article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+          display: block;
+        }
+
+      html {background-color: #E8E8E8;}
+      body {
+        /*styles for our main page layout*/
+        background-color: white;
+        background-color: rgb(255,255,255);
+        background-color: rgba(255,255,255,0.9);
+        border: 1px solid darksalmon;
+        margin: 20px auto;
+        padding: 0px;
+        width: 945px;
+      }
+
+      /*headings*/
+        h1, h2, h3, h4 {
+          color: #333;
+          font: bold 36px/40px Arial, sans-serif;
+        }
+          h1 {
+            background-color: white;
+            background-color: rgb(255,255,255);
+            background-color: rgba(255,255,255,0.9);
+            color: lightsalmon;
+            font-size: 48px;
+            line-height: 60px;
+            padding: 10px 0px;
+            text-align: center;
+            text-shadow: 4px 4px 2px rgba(0,0,0,0.025);
+          }
+          h2, h3, h4, h5, h6 {
+            color: teal;
+            margin: 10px 8px;
+            text-align: left;
+          }
+          h2 {
+            font-size: 24px;
+            line-height: 38px;
+          }
+          h3 {
+            font-size: 18px; 
+            line-height: 38px;
+          }
+          h4 {
+            font-size: 14px; 
+            line-height: 18px;
+            padding: 20px;
+          }
+          h5 {
+            font-size: 12px; 
+            line-height: 18px;
+          }
+      
+      /*content*/
+        p {
+          /*default text on our page*/
+          color: #555;
+          font: 500 16px/24px Georgia, serif;
+          margin: 0px;
+          padding: 10px;
+        }
+        p:hover {
+          background-color: #F3F3F3;
+          background-color: rgb(243,243,243);
+          background-color: rgba(0,0,0,0.025);
+          border-radius: 10px;
+        }
+          p, p:hover {
+            transition:         background-color 0.4s linear;
+            -webkit-transition: background-color 0.4s linear;
+          }
+        p a:link {
+          border-bottom: 1px solid transparent;
+          color: teal;
+          font-weight: bold;
+          text-decoration: none;
+        }
+        p a:hover,
+        p a:visited,
+        p a:focus {
+          color: darksalmon;
+          border-bottom-color: darksalmon;
+        }
+        p a:active {
+          color: lightsalmon;
+        }
+        p a:link,
+        p a:hover,
+        p a:visited,
+        p a:focus,
+        p a:active {
+          transition:         border-bottom-color 0.2s linear;
+          -webkit-transition: border-bottom-color 0.2s linear;
+        }
+        #sidebar p {
+          color: lightseagreen;
+          font: 500 12px/20px Arial, sans-serif;
+        }
+        #sidebar h3 {
+          color: lightseagreen;
+        }
+
+      /*navigation*/
+        .navigation {
+          border-top: 1px solid lightsalmon;
+          border-bottom: 1px solid lightsalmon;
+          background-color: white;
+          font: 500 12px/12px Arial, sans-serif;
+          margin: 0px auto;
+          padding: 10px 0px;
+          text-align: center;
+          width: auto;
+        }
+        .navigation li {
+          background-color: salmon;
+          border: 2px solid white;
+          display: inline-block;
+          list-style: none;
+          vertical-align: center;
+        }
+        .navigation li a {
+          color: white;
+          /*float: left;*/
+          border-bottom: 1px solid transparent;
+          display: inline-block;
+          margin: 8px;
+          padding: 0px;
+          text-decoration: none;
+        }
+          #secondary_navigation .navigation li {
+            display: block;
+            padding: 0px;
+            text-align: left;
+            max-width: 300px;
+          }
+          #secondary_navigation .navigation a {
+            width: auto;
+          }
+          .navigation li:hover {
+            background-color: lightsalmon;
+            border-color: lightsalmon;
+          }
+          .navigation li,
+          .navigation li:hover {
+            transition:         background-color 0.3s linear;
+            -webkit-transition: background-color 0.3s linear;
+            transition:         border-color 0.2s linear;
+            -webkit-transition: border-color 0.2s linear;
+          }
+          .navigation li:hover a {
+            border-bottom: 1px solid white;
+            text-decoration: none;
+          }
+          .navigation li a,
+          .navigation li a:hover {
+            transition:         border-color 0.4s linear;
+            -webkit-transition: border-color 0.4s linear;
+          }
+
+      /*page structure*/
+        #page_body {
+          clear: both;
+          margin: 10px 0px;
+          padding: 0px;
+        }
+        #main, #sidebar {
+          display: inline-block;
+          vertical-align: top;
+        }
+        #main {
+          padding: 0px 0px 50px 20px;
+          width: 600px;
+        }
+        #sidebar {
+          border-left: 1px solid #E8E8e8;
+          margin-left: 30px;
+          padding: 0px 15px 0px 30px;
+          width: 245px;
+        }
+        #page_footer {
+          background-color: white;
+          border-top: 1px solid lightsalmon;
+        }
+        #secondary_navigation .navigation {
+          border-top: 0px;
+          padding: 20px;
+        }
+
+        @media screen and (max-width: 640px) {
+        }
+        @media screen and (min-width: 960px) {
+          
+        }
+
+      /*responsive*/
+        /*full desktop and below*/
+        @media only all and (min-width: 769px) {
+          body {width: 945px;}
+          #main {width: 600px;}
+          #sidebar {width: 245px;}
+        }
+        /*ipad portrait and below*/ 
+        @media only screen and (min-width: 333px) and (max-width: 768px) {
+          body {width: 768px;}
+          #main {width: 420px;}
+          #sidebar {width: 245px;}
+        }
+        /*handset portrait and below*/
+        @media only screen and (min-width: 0px) and (max-width: 332px) {
+          body {width: 332px;}
+          .navigation li {width: 300px;}
+          .navigation li a {display: inline-block;}
+          #main {width: 300px;}
+          #sidebar {
+            border: 0px;
+            margin-left: 0px;
+            padding-left: 15px;
+            width: 300px;
+          }
+          #secondary_navigation .navigation {
+            padding: 10px;
+            text-align: center;
+          }
+        }
+        /*retina*/
+        @media only screen and (-webkit-min-device-pixel-ratio:1.5),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (min-device-pixel-ratio:1.5) { 
+          body {outline: 1px solid purple;}
+        }
+    </style>
+  </head>
+  <body>
+    <header id="page_header">
+      <h1>CSS Sandbox</h1>
+      <nav id="main_navigation">
+        <ul class="navigation">
+          <li><a href="http://www.scripted.org/">ScriptEd.org</a></li>
+          <li><a href="https://github.com/tiffehr/curriculum/tree/master/unitsYear2/3-CSS">This Lesson's GitHub Page</a></li>
+          <li><a href="http://www.google.com/">Google Search</a></li>
+          <li><a href="http://www.w3.org/Style/CSS/specs.en.html">W3.org CSS Specs</a></li>
+          <li><a href="https://dev.opera.com/articles/css-twenty-years-hakon/">20 Years of CSS</a></li>
+          <li><a href="http://www.csszengarden.com/">CSS Zen Garden</a></li>
+          <li><a href="http://css-tricks.com/almanac/">CSS Tricks</a></li>
+          <li><a href="https://hacks.mozilla.org/2014/09/single-div-drawings-with-css/">A Single Div demo</a></li>
+        </ul>
+      </nav>
+    </header>
+    <article id="page_body">
+      <section id="main">
+        <h2>Our Main Page</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco <a href="http://www.youtube.com">laboris nisi ut aliquip</a> ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </section>
+      <aside id="sidebar">
+        <h3>Sidebar</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <h3>More</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </aside>
+    </article>
+    <footer id="page_footer">
+      <nav id="secondary_navigation">
+        <h4>References</h4>
+        <ul class="navigation">
+          <li><a href="http://www.scripted.org/">ScriptEd.org</a></li>
+          <li><a href="http://www.google.com/">Google Search</a></li>
+          <li><a href="http://www.w3.org/Style/CSS/specs.en.html">W3.org CSS Specs</a></li>
+          <li><a href="https://dev.opera.com/articles/css-twenty-years-hakon/">20 Years of CSS</a></li>
+          <li><a href="http://www.csszengarden.com/">CSS Zen Garden</a></li>
+          <li><a href="http://css-tricks.com/almanac/">CSS Tricks</a></li>
+          <li><a href="https://hacks.mozilla.org/2014/09/single-div-drawings-with-css/">A Single Div demo</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
