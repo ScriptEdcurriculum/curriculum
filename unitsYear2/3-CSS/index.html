@@ -96,7 +96,7 @@
           padding: 10px;
         }
         p a:link {
-          border-bottom: 1px solid teal;
+          border-bottom: 1px solid transparent;
           color: teal;
           font-weight: bold;
           text-decoration: none;
@@ -104,11 +104,26 @@
         p a:hover,
         p a:visited,
         p a:focus {
-          color: darksalmon;
           border-bottom-color: darksalmon;
+          color: darksalmon;
         }
         p a:active {
           color: lightsalmon;
+        }
+        p a:link, /*all the properties*/
+        p a:hover,
+        p a:visited,
+        p a:focus,
+        p a:active {
+          -webkit-transition: border-bottom-color 0.2s linear;
+          -moz-transition:    border-bottom-color 0.2s linear;
+          -o-transition:      border-bottom-color 0.2s linear;
+          transition:         border-bottom-color 0.2s linear;
+
+          -webkit-transition: color 0.2s linear;
+          -moz-transition:    color 0.2s linear;
+          -o-transition:      color 0.2s linear;
+          transition:         color 0.2s linear;
         }
         #sidebar p,
         #sidebar li {
