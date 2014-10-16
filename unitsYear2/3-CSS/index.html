@@ -59,6 +59,7 @@
             outline: 2px solid red;
           }
           #page_body {
+            border-top: 1px solid lightsalmon;
             clear: both;
             margin: 10px 0px;
             outline: 2px solid orange;
@@ -66,19 +67,25 @@
           }
             /*why indent?*/
             #main, #sidebar {
-              float: left;
-              outline: 1px solid lime;
+              display: inline-block;
+              vertical-align: top; /*bottom, center, middle, etc*/
             }
             #main {
+              outline: 1px solid lightgreen;
+              padding: 0px 0px 50px 20px;
               width: 600px;
             }
             #sidebar {
+              outline: 1px solid darkgreen;
+              padding: 0px 15px 0px 30px;
               width: 245px;
             }
+              #sidebar ol {
+                list-style: circle;
+              }
           #page_footer {
             background-color: white;
             border-top: 1px solid lightsalmon;
-            outline: 2px solid yellow;
           }
     </style>
   </head>
