@@ -56,30 +56,35 @@
     </style>
   </head>
   <body>
-    <header>
+    <header id="page_header"><!-- why ID these elements? CSS portability versus extra characters -->
       <h1>CSS Sandbox</h1>
     </header>
-    <article>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-      <p>
-        But now check separate browsers. <a href="http://dowebsitesneedtolookexactlythesameineverybrowser.com/">They'll look different</a>.  Why?
-      </p>
-      <h2>Steps:</h2>
-      <ol>
-        <li>start</li>
-        <li>fundamentals</li>
-        <li>'reset' styles for different browsers</li>
-        <li>CSS property shorthands</li>
-      </ol>
+    <article id="page_body">
+      <section>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+          But now check separate browsers. <a href="http://dowebsitesneedtolookexactlythesameineverybrowser.com/">They'll look different</a>.  Why?
+        </p>
+      </section>
+      <aside>
+        <h2>Steps:</h2>
+        <ol>
+          <li>start</li>
+          <li>fundamentals</li>
+          <li>'reset' styles for different browsers</li>
+          <li>CSS property shorthands</li>
+          <li>basic columns (float versus inline-block)</li>
+        </ol>
+      </aside>
     </article>
-    <footer>
+    <footer id="page_footer">
       <p>ScriptEd, 2014</p>
     </footer>
   </body>
