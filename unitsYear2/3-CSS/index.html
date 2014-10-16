@@ -59,10 +59,22 @@
             outline: 2px solid red;
           }
           #page_body {
+            clear: both;
             margin: 10px 0px;
             outline: 2px solid orange;
             padding: 0px;
           }
+            /*why indent?*/
+            #main, #sidebar {
+              float: left;
+              outline: 1px solid lime;
+            }
+            #main {
+              width: 600px;
+            }
+            #sidebar {
+              width: 245px;
+            }
           #page_footer {
             background-color: white;
             border-top: 1px solid lightsalmon;
@@ -75,7 +87,7 @@
       <h1>CSS Sandbox</h1>
     </header>
     <article id="page_body">
-      <section>
+      <section id="main">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -88,7 +100,7 @@
           But now check separate browsers. <a href="http://dowebsitesneedtolookexactlythesameineverybrowser.com/">They'll look different</a>.  Why?
         </p>
       </section>
-      <aside>
+      <aside id="sidebar">
         <h2>Steps:</h2>
         <ol>
           <li>start</li>
