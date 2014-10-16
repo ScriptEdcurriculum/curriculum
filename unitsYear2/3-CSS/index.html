@@ -48,6 +48,7 @@
           padding: 0px; /*applies to all four sidesh with this one value*/
           width: 945px;
         }
+        
         /*headings*/
           h1, h2, h3, h4 {
             color: #333; /*these can be interesting, e.g., F00, 000, 369, etc*/
@@ -85,6 +86,7 @@
               font-size: 12px; 
               line-height: 18px;
             }
+        
         /*content*/
         p {
           /*default text on our page*/
@@ -93,12 +95,33 @@
           margin: 0px;
           padding: 10px;
         }
-        #sidebar p {
+        p a:link {
+          color: teal;
+          font-weight: bold;
+          text-decoration: underline;
+        }
+        p a:hover,
+        p a:visited,
+        p a:focus {
+          color: darksalmon;
+          border-bottom-color: darksalmon;
+        }
+        p a:active {
+          color: lightsalmon;
+        }
+        #sidebar p,
+        #sidebar li {
           color: lightseagreen;
           font: 500 12px/20px Arial, sans-serif;
         }
         #sidebar h3 {
           color: lightseagreen;
+        }
+        #page_footer p {
+          color: #999;
+          font: 500 16px/24px Arial, sans-serif;
+          margin: 0px;
+          padding: 10px;
         }
 
         /*page structure*/
