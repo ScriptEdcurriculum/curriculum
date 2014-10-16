@@ -42,20 +42,16 @@
           /*styles for our main page layout*/
           background-color: white;
           background-color: rgb(255,255,255);
-          background-color: rgba(255,255,255,0.9);
-          border-width: 1px;
-          border-color: darksalmon;
-          margin-top: 20px;
-          margin-bottom: 20px;
-          margin-right: auto;
-          margin-left: auto;
-          padding: 0px;
+          background-color: rgba(255,255,255,0.9); /*fallbacks for browsers not yet able*/
+          border: 1px solid darksalmon; /*width style color*/
+          margin: 20px auto 20px auto; /*top left bottom right*/
+          padding: 0px; /*applies to all four sidesh with this one value*/
           width: 945px;
         }
         /*headings*/
         h1, h2, h3, h4 {
-          color: #333;
-          font: bold 36px/40px Arial, sans-serif;
+          color: #333; /*these can be interesting, e.g., F00, 000, 369, etc*/
+          font: bold 36px/40px Arial, sans-serif; /*style size/line-height font-family*/
         }
     </style>
   </head>
@@ -80,6 +76,7 @@
         <li>start</li>
         <li>fundamentals</li>
         <li>'reset' styles for different browsers</li>
+        <li>CSS property shorthands</li>
       </ol>
     </article>
     <footer>
