@@ -178,6 +178,22 @@
             background-color: lightsalmon;
             border-color: lightsalmon;
           }
+          .navigation li,
+          .navigation li:hover {
+            transition:         background-color 0.3s linear;
+            -webkit-transition: background-color 0.3s linear;
+            transition:         border-color 0.2s linear;
+            -webkit-transition: border-color 0.2s linear;
+          }
+          .navigation li:hover a {
+            border-bottom: 1px solid white;
+            text-decoration: none;
+          }
+          .navigation li a,
+          .navigation li a:hover {
+            transition:         border-color 0.4s linear;
+            -webkit-transition: border-color 0.4s linear;
+          }
           #secondary_navigation .navigation li {
             display: block;
             padding: 0px;
@@ -282,6 +298,7 @@
           <li>effects: animations via CSS3 transitions</li>
           <li>effects: rgba and fallbacks</li>
           <li>navigation</li>
+          <li>effects: animations via CSS3 transitions</li>
         </ol>
         <h3>Sidebar</h3>
         <p>
