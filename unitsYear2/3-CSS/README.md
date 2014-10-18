@@ -1,5 +1,5 @@
 #Project 3 - CSS Mastery
-![lesson.png](Lesson Sample)
+<img src="lesson.png" alt="Lesson Sample" />
 
 ##Scope
 This lesson reiterates the fundamentals of CSS then advances into more sophisticated, commonly used techniques. It uses a single-page sandbox that mimics a standard website content page. 
