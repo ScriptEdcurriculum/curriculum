@@ -246,35 +246,24 @@
           padding: 20px;
         }
 
-        @media screen and (max-width: 400px) {
-          body {outline: 3px solid dodgerblue;}
-        }
-        @media screen and (min-width: 401px) and (max-width: 640px) {
-          /*what does this imply?*/
-          body {outline: 3px solid red;}
-        }
-        @media screen and (min-width: 641px) and (max-width: 959px) {
-          body {outline: 3px solid lime;}
-        }
-        @media screen and (min-width: 960px) {
-          body {outline: 3px solid blue;}
-        }
-
       /*responsive*/
+        @media screen and (min-width: 960px) {
+          
+        }
         /*full desktop and below*/
-        @media only all and (min-width: 769px) {
+        @media screen and (min-width: 641px) and (max-width: 959px) {
           body {width: 945px;}
           #main {width: 600px;}
           #sidebar {width: 245px;}
         }
         /*ipad portrait and below*/ 
-        @media only screen and (min-width: 333px) and (max-width: 768px) {
+        @media screen and (min-width: 401px) and (max-width: 640px) {
           body {width: 768px;}
           #main {width: 420px;}
           #sidebar {width: 245px;}
         }
         /*handset portrait and below*/
-        @media only screen and (min-width: 0px) and (max-width: 332px) {
+        @media screen and (max-width: 400px) {
           body {width: 332px;}
           .navigation li {width: 300px;}
           .navigation li a {display: inline-block;}
