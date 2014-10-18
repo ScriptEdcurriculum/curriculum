@@ -246,10 +246,18 @@
           padding: 20px;
         }
 
-        @media screen and (max-width: 640px) {
+        @media screen and (max-width: 400px) {
+          body {outline: 3px solid dodgerblue;}
+        }
+        @media screen and (min-width: 401px) and (max-width: 640px) {
+          /*what does this imply?*/
+          body {outline: 3px solid red;}
+        }
+        @media screen and (min-width: 641px) and (max-width: 959px) {
+          body {outline: 3px solid lime;}
         }
         @media screen and (min-width: 960px) {
-          
+          body {outline: 3px solid blue;}
         }
 
       /*responsive*/
