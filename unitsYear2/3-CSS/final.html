@@ -47,7 +47,9 @@
           display: block;
         }
 
-      html {background-color: #E8E8E8;}
+      html {
+        background: #666 url('nyt_illo_bkg.png') top center repeat-y;
+      }
       body {
         /*styles for our main page layout*/
         background-color: white;
@@ -65,15 +67,15 @@
           font: bold 36px/40px Arial, sans-serif;
         }
           h1 {
-            background-color: white;
+            /*background-color: white;
             background-color: rgb(255,255,255);
-            background-color: rgba(255,255,255,0.9);
+            background-color: rgba(255,255,255,0.9);*/
             color: lightsalmon;
             font-size: 48px;
             line-height: 60px;
             padding: 10px 0px;
             text-align: center;
-            text-shadow: 4px 4px 2px rgba(0,0,0,0.025);
+            text-shadow: 4px 4px 2px rgba(0,0,0,0.145);
           }
           h2, h3, h4, h5, h6 {
             color: teal;
@@ -146,6 +148,10 @@
         #sidebar h3 {
           color: lightseagreen;
         }
+        #secondary_navigation h4 {
+          background-color: white;
+          margin: 0px;
+        }
 
       /*navigation*/
         .navigation {
@@ -207,7 +213,7 @@
       /*page structure*/
         #page_body {
           clear: both;
-          margin: 10px 0px;
+          margin: 0px;
           padding: 0px;
         }
         #main, #sidebar {
@@ -225,7 +231,9 @@
           width: 245px;
         }
         #page_footer {
-          background-color: white;
+          /*background-color: white;
+          background-color: rgb(255,255,255);
+          background-color: rgba(255,255,255,0.9);*/    
           border-top: 1px solid lightsalmon;
         }
         #secondary_navigation .navigation {
