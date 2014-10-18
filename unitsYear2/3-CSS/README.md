@@ -1,5 +1,5 @@
 #Project 3 - CSS Mastery
-![Image](http://)
+![lesson.png](Lesson Sample)
 
 ##Scope
 This lesson reiterates the fundamentals of CSS then advances into more sophisticated, commonly used techniques. It uses a single-page sandbox that mimics a standard website content page. 
@@ -12,8 +12,7 @@ Coding is a progression of tagged commits to this repo, to enable diff-based rem
 
 (Lesson)[index.html]
 
-
-(Lesson - final)[final.html]
+<!--(Lesson - final)[final.html]-->
 
 ##Vocabulary
 * **CSS** - Cascading StyleSheets, the 'decoration' layer of front-end technologies
