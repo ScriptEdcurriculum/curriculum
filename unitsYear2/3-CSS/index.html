@@ -91,62 +91,68 @@
             }
         
         /*content*/
-        p {
-          /*default text on our page*/
-          color: #555;
-          font: 500 16px/24px Georgia, serif;
-          margin: 0px;
-          padding: 10px;
-        }
-        p a:link {
-          border-bottom: 1px solid transparent;
-          color: teal;
-          font-weight: bold;
-          text-decoration: none;
-        }
-        p a:hover,
-        p a:visited,
-        p a:focus {
-          border-bottom-color: darksalmon;
-          color: darksalmon;
-        }
-        p a:active {
-          color: lightsalmon;
-        }
-        p a:link, /*all the properties*/
-        p a:hover,
-        p a:visited,
-        p a:focus,
-        p a:active {
-          -webkit-transition: border-bottom-color 0.2s linear;
-          -moz-transition:    border-bottom-color 0.2s linear;
-          -o-transition:      border-bottom-color 0.2s linear;
-          transition:         border-bottom-color 0.2s linear;
+          p {
+            /*default text on our page*/
+            color: #555;
+            font: 500 16px/24px Georgia, serif;
+            margin: 0px;
+            padding: 10px;
+          }
+          p a:link {
+            border-bottom: 1px solid transparent;
+            color: teal;
+            font-weight: bold;
+            text-decoration: none;
+          }
+          p a:hover,
+          p a:visited,
+          p a:focus {
+            border-bottom-color: darksalmon;
+            color: darksalmon;
+          }
+          p a:active {
+            color: lightsalmon;
+          }
+          p a:link, /*all the properties*/
+          p a:hover,
+          p a:visited,
+          p a:focus,
+          p a:active {
+            -webkit-transition: border-bottom-color 0.2s linear;
+            -moz-transition:    border-bottom-color 0.2s linear;
+            -o-transition:      border-bottom-color 0.2s linear;
+            transition:         border-bottom-color 0.2s linear;
 
-          -webkit-transition: color 0.2s linear;
-          -moz-transition:    color 0.2s linear;
-          -o-transition:      color 0.2s linear;
-          transition:         color 0.2s linear;
-        }
-        #sidebar p,
-        #sidebar li {
-          color: lightseagreen;
-          font: 500 12px/20px Arial, sans-serif;
-        }
-        #sidebar h3 {
-          color: lightseagreen;
-        }
-        #secondary_navigation h4 {
-          background-color: white;
-          margin: 0px;
-          padding: 20px 20px 0 20px;
-        }
-        #page_footer p {
-          color: #999;
-          font: 500 16px/24px Arial, sans-serif;
-          margin: 0px;
-          padding: 10px;
-        }
+            -webkit-transition: color 0.2s linear;
+            -moz-transition:    color 0.2s linear;
+            -o-transition:      color 0.2s linear;
+            transition:         color 0.2s linear;
+          }
+          #sidebar p,
+          #sidebar li {
+            color: lightseagreen;
+            font: 500 12px/20px Arial, sans-serif;
+          }
+          #sidebar h3 {
+            color: lightseagreen;
+          }
+          #secondary_navigation h4 {
+            background-color: white;
+            margin: 0px;
+            padding: 20px 20px 0 20px;
+          }
+          #page_footer p {
+            color: #999;
+            font: 500 16px/24px Arial, sans-serif;
+            margin: 0px;
+            padding: 0px 20px 20px 20px;
+          }
+        
+        /*navigation*/
+          .navigation {
+            font: 500 12px/12px Arial, sans-serif;
+            margin: 0px auto;
+          }
 
         /*page structure*/
           #page_header {
@@ -182,6 +188,10 @@
             background-color: rgb(255,255,255);
             background-color: rgba(255,255,255,0.9);  
             border-top: 1px solid lightsalmon;
+          }
+          #secondary_navigation .navigation {
+            border-top: 0px;
+            padding: 20px;
           }
     </style>
   </head>
@@ -230,6 +240,7 @@
           <li>effects: hover animation, text-shadow, etc</li>
           <li>effects: animations via CSS3 transitions</li>
           <li>effects: rgba and fallbacks</li>
+          <li>navigation</li>
         </ol>
         <h3>Sidebar</h3>
         <p>
@@ -243,6 +254,12 @@
       </aside>
     </article>
     <footer id="page_footer">
+      <nav id="secondary_navigation">
+        <h4>References</h4>
+        <ul class="navigation">
+          <li><a href="">links</a></li>
+        </ul>
+      </nav>
       <p>ScriptEd, 2014</p>
     </footer>
   </body>
