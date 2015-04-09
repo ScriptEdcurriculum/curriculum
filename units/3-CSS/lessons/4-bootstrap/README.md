@@ -58,7 +58,7 @@ For this unit, we will only look at the CSS aspects of Bootstrap.
 
 We first need to bring Bootstrap into our project. We do this by using the ``<link>`` tag in the ``<head>...</head>`` section of our page. Starting from scratch, our HTML code should look something like this:
 
-```
+```html
 <html>
   <head>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -75,7 +75,7 @@ Note the link where the Bootstrap CSS file is located. Another website is hostin
 
 Let's take a look at a single element before the inclusion of Bootstrap and afterwards. Consider the following code:
 
-```
+```html
 <html>
   <head>
     <title>Hello world!</title>
@@ -94,7 +94,7 @@ These are all the styles being applied to that button. But wait. We don't have a
 
 Let's now insert bootstrap into our code above. Consider the following code:
 
-```
+```html
 <html>
   <head>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -123,7 +123,7 @@ Bootstrap offers a grid system that lets you arrange you content in columns and 
 
 Consider the following code:
 
-```
+```html
 <html>
   <head>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -205,7 +205,7 @@ We're going to make a page about your school with Boostrap in it. Let's have the
 6. Let's make another `h2` tag to write an "Alma mater" heading.
 7. Let's use the `blockquote` tag that Bootstrap offers us to write down your school's alma mater.
 8. Let's make another `h2` tag to write a "Roster" heading.
-9. Let's create a grid with 3 equally sized columns using Bootstrap's grid system. Each cell of the grid should have the name of a student in our ScriptEd class.
+9. Let's create a grid with 3 equally sized columns using Bootstrap's grid system. Each cell of the grid should have the name of a student in our Code Park class.
 
 ### Independent practice ("You do")
 
