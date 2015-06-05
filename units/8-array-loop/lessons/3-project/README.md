@@ -68,7 +68,7 @@ Modify `js/guts.js` and add a function called `getMoviesFoundText(numberMatches)
 
 Modify `js/guts.js` and add a function called `printFoundMovies(indices, movies)` to it. This function takes in two parameters: `indices` represents an array of indices into the `movies` array of matched movies; `movies` is an array containing all movies. This function should return an array of strings. Each string should be a movie that matches the user's search query.
 
-###Brianstorming
+###Brainstorming
 Before you start coding, identify the list of steps you need to do to finish this project. Here's a start:
 
 1. Draft a small list of movies that will be in your movie database. Then come up with several test cases. What is in the input (search query) and output (search results) in each test case? Do this on paper.
