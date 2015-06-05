@@ -28,7 +28,7 @@ Whether we have a social media account or not we know what they look like. If yo
 Today in class you are all going to make your own social media bio page.[Here]() is an example of one that we made before class.
 
 ##Project Creation Time
-#####Brianstorming/Prototyping
+#####Brainstorming/Prototyping
 Before students are given a computer they must make a paper mock up of how they would like their page to be laid out **on paper**. 
 
 #####Build Time
