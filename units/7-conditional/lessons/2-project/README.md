@@ -64,7 +64,7 @@ This function contains two variables:
 
 Be sure not to change any code that is already there.
 
-###Brianstorming
+###Brainstorming
 Before you start coding, identify the list of steps you need to do to finish this project. Here's a start:
 
 1. What kind of conditional logic will you need? Write pseudo-code on paper using `if` and `else` statements.
