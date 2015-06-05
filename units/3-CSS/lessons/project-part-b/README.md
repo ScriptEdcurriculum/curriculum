@@ -44,7 +44,7 @@ The people who created Bootstrap knew of these sections. They packed Boostrap wi
 ###Lecture
 You are going to take your "About me" page from lesson 2 and adapt it to use Twitter Bootstrap. You are specifically going to make your new page look like [this](http://getbootstrap.com/examples/jumbotron-narrow/). 
 
-###Brianstorming
+###Brainstorming
 Before you start coding, identify the list of steps you need to do to finish this project. Here's a start:
 
 1. Open the starter code. Understand what is going on.
