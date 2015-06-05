@@ -53,7 +53,7 @@ To test if your Wall works as expected, post the following messages in order: "F
 
 ![image](http://i.imgur.com/2yz4k1Z.png)
 
-###Brianstorming
+###Brainstorming
 Before you start coding, identify the list of steps you need to do to finish this project. Here's a start:
 
 1. Read `index.html`. Pay attention to the IDs of the text box, button, and `div` at the bottom.
