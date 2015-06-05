@@ -48,7 +48,7 @@ function runMadlibs(text, boy_name_1, noun_1, occupation_1, measurement_1, noun_
 
 You must create and implement this function. The `text` variable represents the text that you will need to modify. Print it out to the console to get more clues. The other parameters represent the values from the text boxes on the page. This function must return the modified text. 
 
-###Brianstorming
+###Brainstorming
 Before you start coding, identify the list of steps you need to do to finish this project. Here's a start:
 
 1. What string functions do you anticipate using? How do you use them?
