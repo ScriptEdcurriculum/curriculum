@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ScriptEd ~ CSS Mastery lesson</title>
+    <style type="text/css">
+      /*reset*/
+        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, 
+        abbr, acronym, address, big, cite, code, del, dfn, em, img, 
+        ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, 
+        ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, 
+        article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary, time, mark, audio, video {
+          margin: 0;
+          padding: 0;
+          border: 0;
+          font: inherit;
+          font-size: 100%;
+          vertical-align: baseline
+        }
+        html {line-height: 1;}
+        ol, ul {list-style: none;}
+        table {
+          border-collapse: collapse;
+          border-spacing: 0;
+        }
+        caption, th, td {
+          text-align: left;
+          font-weight: normal;
+          vertical-align: middle;
+        }
+        q, blockquote {quotes: none;}
+        q:before, q:after, blockquote:before, blockquote:after {
+          content: "";
+          content: none;
+        }
+        a img {border: none;}
+        article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {display: block;}
+
+      /*customizations*/
+        html {
+          background: #666 url('nyt_illo_bkg.png') top center repeat;
+        }
+        body {
+          /*styles for our main page layout*/
+          background-color: white;
+          background-color: rgb(255,255,255);
+          background-color: rgba(255,255,255,0.9); /*fallbacks for browsers not yet able*/
+          border: 1px solid darksalmon; /*width style color*/
+          margin: 20px auto 20px auto; /*top left bottom right*/
+          padding: 0px; /*applies to all four sidesh with this one value*/
+          width: 945px;
+        }
+        
+        /*headings*/
+          h1, h2, h3, h4 {
+            color: #333; /*these can be interesting, e.g., F00, 000, 369, etc*/
+            font: bold 36px/40px Arial, sans-serif; /*style size/line-height font-family*/
+          }
+            h1 {
+              background-color: white;
+              background-color: rgb(255,255,255);
+              background-color: rgba(255,255,255,0.9);
+              color: lightsalmon;
+              font-size: 48px;
+              line-height: 60px;
+              padding: 10px 0px;
+              text-align: center;
+              text-shadow: 4px 4px 2px rgba(0,0,0,0.145);
+            }
+            h2, h3, h4, h5, h6 {
+              color: teal;
+              margin: 10px 8px;
+              text-align: left;
+            }
+            h2 {
+              font-size: 24px;
+              line-height: 38px;
+            }
+            h3 {
+              font-size: 18px; 
+              line-height: 38px;
+            }
+            h4 {
+              font-size: 14px; 
+              line-height: 18px;
+              padding: 20px;
+            }
+            h5 {
+              font-size: 12px; 
+              line-height: 18px;
+            }
+        
+        /*content*/
+          p {
+            /*default text on our page*/
+            color: #555;
+            font: 500 16px/24px Georgia, serif;
+            margin: 0px;
+            padding: 10px;
+          }
+          p a:link {
+            border-bottom: 1px solid transparent;
+            color: teal;
+            font-weight: bold;
+            text-decoration: none;
+          }
+          p a:hover,
+          p a:visited,
+          p a:focus {
+            border-bottom-color: darksalmon;
+            color: darksalmon;
+          }
+          p a:active {
+            color: lightsalmon;
+          }
+          p a:link, /*all the properties*/
+          p a:hover,
+          p a:visited,
+          p a:focus,
+          p a:active {
+            -webkit-transition: border-bottom-color 0.2s linear;
+            -moz-transition:    border-bottom-color 0.2s linear;
+            -o-transition:      border-bottom-color 0.2s linear;
+            transition:         border-bottom-color 0.2s linear;
+
+            -webkit-transition: color 0.2s linear;
+            -moz-transition:    color 0.2s linear;
+            -o-transition:      color 0.2s linear;
+            transition:         color 0.2s linear;
+          }
+          #sidebar p,
+          #sidebar li {
+            color: lightseagreen;
+            font: 500 12px/20px Arial, sans-serif;
+          }
+          #sidebar h3 {
+            color: lightseagreen;
+          }
+          #secondary_navigation h4 {
+            background-color: white;
+            margin: 0px;
+            padding: 20px 20px 0 20px;
+          }
+          #page_footer p {
+            color: #999;
+            font: 500 16px/24px Arial, sans-serif;
+            margin: 0px;
+            padding: 20px;
+          }
+        
+        /*navigation*/
+          .navigation {
+            border-top: 1px solid lightsalmon;
+            border-bottom: 1px solid lightsalmon;
+            background-color: white;
+            font: 500 12px/12px Arial, sans-serif;
+            margin: 0px auto;
+            padding: 10px 0px;
+            text-align: center;
+            width: auto;
+          }
+          .navigation li {
+            background-color: salmon;
+            border: 2px solid white;
+            display: inline-block;
+            list-style: none;
+            vertical-align: center;
+          }
+          .navigation li a {
+            border-bottom: 1px solid transparent;
+            color: white;
+            display: inline-block;
+            margin: 8px;
+            padding: 0px;
+            text-decoration: none;
+          }
+          .navigation li:hover {
+            background-color: lightsalmon;
+            border-color: lightsalmon;
+          }
+          .navigation li,
+          .navigation li:hover {
+            transition:         background-color 0.3s linear;
+            -webkit-transition: background-color 0.3s linear;
+            transition:         border-color 0.2s linear;
+            -webkit-transition: border-color 0.2s linear;
+          }
+          .navigation li:hover a {
+            border-bottom: 1px solid white;
+            text-decoration: none;
+          }
+          .navigation li a,
+          .navigation li a:hover {
+            transition:         border-color 0.4s linear;
+            -webkit-transition: border-color 0.4s linear;
+          }
+          #secondary_navigation .navigation li {
+            display: block;
+            padding: 0px;
+            text-align: left;
+            max-width: 300px;
+          }
+
+        /*page structure*/
+          #page_header {}
+          #page_body {
+            border-top: 1px solid lightsalmon;
+            clear: both;
+            margin: 0px;
+            padding: 0px;
+          }
+            /*why indent?*/
+            #main, #sidebar {
+              display: inline-block;
+              vertical-align: top; /*bottom, center, middle, etc*/
+            }
+            #main {
+              padding: 0px 0px 50px 20px;
+              width: 600px;
+            }
+            #sidebar {
+              border-left: 1px solid #E8E8e8;
+              margin-left: 30px;
+              padding: 0px 15px 0px 30px;
+              width: 245px;
+            }
+              #sidebar ol {
+                list-style: circle;
+                padding-left: 16px;
+              }
+          #page_footer {
+            background-color: white;
+            background-color: rgb(255,255,255);
+            background-color: rgba(255,255,255,0.9);  
+            border-top: 1px solid lightsalmon;
+          }
+          #secondary_navigation .navigation {
+            border-top: 0px;
+            padding: 20px;
+          }
+      
+        /*responsive*/
+        @media screen and (max-width: 400px) {
+          body {outline: 3px solid dodgerblue;}
+        }
+        @media screen and (min-width: 401px) and (max-width: 640px) {
+          /*what does this imply?*/
+          body {outline: 3px solid red;}
+        }
+        @media screen and (min-width: 641px) and (max-width: 959px) {
+          body {outline: 3px solid lime;}
+        }
+        @media screen and (min-width: 960px) {
+          body {outline: 3px solid blue;}
+        }
+    </style>
+  </head>
+  <body>
+    <header id="page_header"><!-- why ID these elements? CSS portability versus extra characters -->
+      <h1>CSS Sandbox</h1>
+      <nav id="main_navigation">
+        <ul class="navigation">
+          <li><a href="http://www.scripted.org/">ScriptEd.org</a></li>
+          <li><a href="https://github.com/tiffehr/curriculum/tree/master/unitsYear2/3-CSS">This Lesson's GitHub Page</a></li>
+          <li><a href="http://www.google.com/">Google Search</a></li>
+          <li><a href="http://www.w3.org/Style/CSS/specs.en.html">W3.org CSS Specs</a></li>
+          <li><a href="https://dev.opera.com/articles/css-twenty-years-hakon/">20 Years of CSS</a></li>
+          <li><a href="http://www.csszengarden.com/">CSS Zen Garden</a></li>
+          <li><a href="http://css-tricks.com/almanac/">CSS Tricks</a></li>
+          <li><a href="https://hacks.mozilla.org/2014/09/single-div-drawings-with-css/">A Single Div demo</a></li>
+        </ul>
+      </nav>
+    </header>
+    <article id="page_body">
+      <section id="main">
+        <h2>Our Main Page</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco <a href="http://www.youtube.com">laboris nisi ut aliquip</a> ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </section>
+      <aside id="sidebar">
+        <h3>Steps:</h3>
+        <ol>
+          <li>start</li>
+          <li>fundamentals</li>
+          <li>'reset' styles for different browsers</li>
+          <li>CSS property shorthands</li>
+          <li>basic columns (float versus inline-block)</li>
+          <li>typefaces and headlines</li>
+          <li>pseudoclasses, namely :hover and :visited</li>
+          <li>effects: hover animation, text-shadow, etc</li>
+          <li>effects: animations via CSS3 transitions</li>
+          <li>effects: rgba and fallbacks</li>
+          <li>navigation</li>
+          <li>effects: animations via CSS3 transitions</li>
+          <li>effects: responsive web design basics</li>
+        </ol>
+        <h3>Sidebar</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </aside>
+    </article>
+    <footer id="page_footer">
+      <nav id="secondary_navigation">
+        <h4>References</h4>
+        <ul class="navigation">
+          <li><a href="http://www.scripted.org/">ScriptEd.org</a></li>
+          <li><a href="http://www.google.com/">Google Search</a></li>
+          <li><a href="http://www.w3.org/Style/CSS/specs.en.html">W3.org CSS Specs</a></li>
+          <li><a href="https://dev.opera.com/articles/css-twenty-years-hakon/">20 Years of CSS</a></li>
+          <li><a href="http://www.csszengarden.com/">CSS Zen Garden</a></li>
+          <li><a href="http://css-tricks.com/almanac/">CSS Tricks</a></li>
+          <li><a href="https://hacks.mozilla.org/2014/09/single-div-drawings-with-css/">A Single Div demo</a></li>
+        </ul>
+      </nav>
+      <p>ScriptEd, 2014</p>
+    </footer>
+  </body>
+</html>
