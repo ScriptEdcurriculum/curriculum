@@ -12,7 +12,7 @@ These programs should all be completed in either a text editor or cloud9.
 | 2| headBody.html |...has "Hello!" as the title and "World!" written in the body |1 |
 | 3| lists.html | ...has an ordered list and an unordered list. Each list needs a title and 3 items. | 1 | 
 | 4 | img.html | ...has two images stacked on top of each other. Each image must have text under it | 3 | 
-| 5 | MyFirstWebsite  | ...contains four webpages; index.html, page1.html, page2.html, page3.html. Each webpage must have a title and one line of identifying text. | 5 | 
+| 5 | MyFirstWebsite  | ...contains four webpages; index.html, page1.html, page2.html, page3.html. Each webpage must have a title and one line of identifying text, and index.html must link to the other pages using relative URLs. | 5 | 
 | 6 | style.css  | ...Center the text on all four webpages using a link to a stylesheet. | 2 | 
 | 7 | MySite  | ...has a home page with your picture and some text. The site also needs three pages about your favorite hobbies (1 page per hobby) | 4 | 
 | 8 | Div | ...improve the index page on your site by including 3 sections each with their own div tag. | 3 |
